@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Remote Attach Use -m",
+            "type": "python",
+            "request": "attach",
+            "port": 3000,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "${workspaceFolder}/remote_test/"
+                }
+            ]
+        },
+        {
             "name": "Python: Remote Attach",
             "type": "python",
             "request": "attach",
